@@ -1,3 +1,12 @@
+//let gamesAlugados = document.querySelectorAll(".dashboard__item__img--rented");
+
+function contarGamesAlugados() {
+    let gamesAlugados = document.querySelectorAll(".dashboard__item__img--rented");
+    console.log(`Quantidade de games alugados = ${gamesAlugados.length}`);
+}
+
+contarGamesAlugados();
+
 function alterarStatus(id) {
     let gameClicado = document.getElementById(`game-${id}`);
     let imagem = gameClicado.querySelector(".dashboard__item__img");
@@ -22,4 +31,5 @@ function alterarStatus(id) {
             botao.textContent = "Devolver";
         }
     }
+    contarGamesAlugados();
 }
